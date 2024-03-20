@@ -3,7 +3,6 @@ import Button from "@/app/components/Button";
 import axios from "axios";
 import { useState } from "react";
 import { useForm, FieldValues, SubmitHandler } from "react-hook-form";
-import { Category } from "@prisma/client";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 

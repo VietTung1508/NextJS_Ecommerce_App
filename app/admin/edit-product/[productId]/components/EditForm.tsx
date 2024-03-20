@@ -90,7 +90,6 @@ const EditForm: React.FC<EditFormProps> = ({ product, categories }) => {
         })
         .then(() => {
           toast.success("Save Successfully");
-          revalidatePath("/admin/products");
         })
         .catch((e) => {
           console.log(e);

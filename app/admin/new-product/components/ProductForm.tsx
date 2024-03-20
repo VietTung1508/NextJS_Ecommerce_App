@@ -117,7 +117,6 @@ const ProductForm: React.FC<ProductFormProps> = ({ categories }) => {
         })
         .then(() => {
           router.push("/admin/products");
-          revalidatePath("/admin/products");
         })
         .catch((err) => {
           console.log(err);
