@@ -31,10 +31,10 @@ const CheckOut: React.FC<CheckOutProps> = ({ currentUser }) => {
     formState: { errors },
   } = useForm<FieldValues>({
     defaultValues: {
-      email: currentUser.email,
-      name: currentUser.name,
-      phoneNumber: currentUser.phoneNumber || "",
-      address: currentUser.address || "",
+      email: currentUser?.email,
+      name: currentUser?.name,
+      phoneNumber: currentUser?.phoneNumber || "",
+      address: currentUser?.address || "",
       note: "",
       delivery: "slow",
       payment: "cod",

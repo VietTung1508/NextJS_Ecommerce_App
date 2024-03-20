@@ -35,9 +35,9 @@ const AccountForm: React.FC<AccountFormProps> = ({ currentUser }) => {
     formState: { errors },
   } = useForm<FieldValues>({
     defaultValues: {
-      address: currentUser.address || "",
+      address: currentUser?.address || "",
       city: "",
-      phoneNumber: currentUser.phoneNumber || "",
+      phoneNumber: currentUser?.phoneNumber || "",
     },
   });
 

@@ -16,7 +16,10 @@ const Page = async () => {
           </Link>
         </div>
       </div>
-      <AccountForm currentUser = {currentUser!} />
+      {
+        //@ts-ignore
+        <AccountForm currentUser={currentUser} />
+      }
     </div>
   );
 };
