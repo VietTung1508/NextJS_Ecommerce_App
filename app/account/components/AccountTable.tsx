@@ -92,21 +92,23 @@ const AccountTable: React.FC<AccountTableProps> = ({ orders }) => {
           </tr>
 
           {orders.map((order, i) => (
-            <tr className="text-center border-b-2 border-black h-20" key={i}>
+            <tr key={i} className="text-center border-b-2 border-black h-20">
               <td className="py-2">
-                {(order?.products as Array<ProductItem>).map((product: any) => (
-                  <div className="flex items-center gap-4 px-2 py-2">
-                    <Image
-                      src={product.product.image}
-                      alt=""
-                      width="100"
-                      height="200"
-                      className="object-cover"
-                    />
+                {(order?.products as Array<ProductItem>).map(
+                  (product: any, i) => (
+                    <div className="flex items-center gap-4 px-2 py-2" key={i}>
+                      <Image
+                        src={product.product.image}
+                        alt=""
+                        width="100"
+                        height="200"
+                        className="object-cover"
+                      />
 
-                    <h3 className="1/3">Quantity {product.quantity}</h3>
-                  </div>
-                ))}
+                      <h3 className="1/3">Quantity {product.quantity}</h3>
+                    </div>
+                  )
+                )}
               </td>
               <td>{order.address}</td>
               <td>

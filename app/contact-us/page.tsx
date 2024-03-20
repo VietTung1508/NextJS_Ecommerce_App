@@ -26,7 +26,7 @@ const Contact = () => {
       <div className="flex gap-5 justify-between w-full mb-8">
         <div className="w-1/3 flex flex-col justify-center  px-4 gap-5">
           {contactInfos.map((contact, i) => (
-            <div className="flex items-start gap-4">
+            <div key={i} className="flex items-start gap-4">
               <contact.icon
                 className="text-auth-btn border-2 border-auth-btn p-2 rounded-full"
                 size={35}

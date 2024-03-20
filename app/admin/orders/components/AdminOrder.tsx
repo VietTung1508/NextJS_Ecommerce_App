@@ -31,8 +31,8 @@ const AdminOrder: React.FC<AdminOrderProps> = ({ orders }) => {
       renderCell: (params: any) => {
         return (
           <div>
-            {params.row.products.map((product: any) => (
-              <div className="row-product">
+            {params.row.products.map((product: any, i: number) => (
+              <div className="row-product" key={i}>
                 <h3>
                   {product.product.name} - {product.quantity} Book
                 </h3>
