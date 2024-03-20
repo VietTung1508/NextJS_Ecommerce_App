@@ -1,0 +1,92 @@
+.datatable {
+  height: 90vh;
+  padding: 10px;
+  background-color: white;
+  .post-confirm-delete-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .post-confirm-delete-modal {
+      background-color: black;
+      padding: 1.5rem 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 30px;
+      border-radius: 10px;
+      color: #fff;
+
+      h1 {
+        font-weight: 800;
+        font-size: 40px;
+      }
+
+      .actions {
+        button {
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .btn-cancle {
+          background-color: transparent;
+          position: relative;
+          padding-bottom: 3px;
+          &:hover {
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              border-bottom: 1px solid #fff;
+            }
+          }
+        }
+
+        .btn-delete {
+          background-color: rgba(239, 35, 60, 0.8);
+          padding: 10px 15px;
+          margin-left: 20px;
+        }
+
+        .btn-delete-disabled {
+          background-color: rgba(239, 35, 60, 0.8);
+          padding: 10px 15px;
+          margin-left: 20px;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .cellAction {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    .editBtn {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: rgb(69, 161, 197);
+      border: 1px dotted rgba(69, 161, 197, 0.569);
+      cursor: pointer;
+    }
+
+    .deleteBtn {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: crimson;
+      border: 1px dotted rgba(220, 20, 60, 0.569);
+      cursor: pointer;
+    }
+  }
+}

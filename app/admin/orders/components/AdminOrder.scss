@@ -1,0 +1,40 @@
+.orderPage {
+  background-color: white;
+
+  .disableBtn {
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgb(79, 142, 165);
+    border: 1px dotted rgba(70, 148, 179, 0.569);
+    opacity: 0.8;
+  }
+  .row-product {
+    display: flex;
+  }
+  .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    .header {
+      .title {
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(0, 0, 0, 0.65);
+        cursor: default;
+      }
+
+      .desc {
+        font-weight: bold;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.65);
+        cursor: default;
+
+        span {
+          color: orange;
+        }
+      }
+    }
+  }
+}

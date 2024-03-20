@@ -1,0 +1,73 @@
+.admin_navbar {
+  height: 49px;
+  border-bottom: 0.5px solid rgb(231, 228, 228);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  background-color: white;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 20px;
+    .search {
+      display: flex;
+      align-items: center;
+      border: 0.5px solid rgb(231, 228, 228);
+      padding: 5px 8px;
+      border-radius: 5px;
+
+      input {
+        outline: none;
+        background-color: transparent;
+      }
+
+      .icon {
+        cursor: pointer;
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+
+        .icon {
+          font-size: 16px;
+        }
+
+        .counter {
+          width: 15px;
+          height: 15px;
+          background-color: RED;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          font-size: 10px;
+          font-weight: bold;
+          position: absolute;
+          top: -8px;
+          right: -8px;
+        }
+
+        .avatar {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

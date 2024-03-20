@@ -1,0 +1,30 @@
+.userPage {
+  background-color: white;
+
+  .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    .header {
+      .title {
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(0, 0, 0, 0.65);
+        cursor: default;
+      }
+
+      .desc {
+        font-weight: bold;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.65);
+        cursor: default;
+
+        span {
+          color: orange;
+        }
+      }
+    }
+  }
+}
