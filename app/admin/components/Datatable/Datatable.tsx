@@ -7,12 +7,6 @@ import { getDetailBook } from "@/app/actions/getDetailBook";
 import { getDetailCategory } from "@/app/actions/getDetailCategory";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import { revalidatePath } from "next/cache";
-
-// import axiosClient from "../../../../api/axiosClient";
-// import EditProductModal from "../EditProductModal/EditProductModal";
-// import EditCategoryModal from "../EditCategoryModal/EditCategoryModal";
-// import EditCouponModal from "../EditCouponModal/EditCouponModal";
 
 interface DatatableProps {
   columns: any[];
@@ -55,21 +49,23 @@ const Datatable: React.FC<DatatableProps> = ({
       if (type == "product") {
         await axios.post("/api/deleteProduct", { id: objID });
         route.push("/admin/products");
-        revalidatePath("/admin/products");
+        setObjDeleteModal(false);
       }
 
       if (type == "category") {
         await axios.post("/api/deleteCategory", { id: objID });
         route.push("/admin/categories");
-        revalidatePath("/admin/categories");
+        setObjDeleteModal(false);
       }
 
       setUpdate(!update);
-      setIsLoading(false);
-      setObjDeleteModal(false);
     } catch (e) {
       console.log(e);
       setIsLoading(false);
+      setObjDeleteModal(false);
+    } finally {
+      setIsLoading(false);
+      setObjDeleteModal(false);
     }
   };
 

@@ -1,6 +1,14 @@
 .orderPage {
   background-color: white;
 
+  .editBtn {
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgb(69, 161, 197);
+    border: 1px dotted rgba(69, 161, 197, 0.569);
+    cursor: pointer;
+  }
+
   .disableBtn {
     padding: 2px 5px;
     border-radius: 5px;
