@@ -5,8 +5,6 @@ import { Category, Product } from "@prisma/client";
 import Button from "@/app/components/Button";
 import { AiOutlineHeart } from "react-icons/ai";
 import clsx from "clsx";
-import ReactImageMagnify from "react-image-magnify";
-import Image from "next/image";
 import { useAppDispatch } from "@/store/store";
 import { addToCart } from "@/store/features/cartSlice";
 import Link from "next/link";
