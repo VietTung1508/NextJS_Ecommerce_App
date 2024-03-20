@@ -1,6 +1,6 @@
 "use client";
 
-import "./Dashboard.scss";
+import "./dashboard.scss";
 import Widget from "../Widget/Widget";
 import { Order, User } from "@prisma/client";
 import Featured from "../Featured/Featured";

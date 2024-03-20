@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { IoMdMore, IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import "./Featured.scss";
+import "./featured.scss";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import {} from "react-icons/io";
